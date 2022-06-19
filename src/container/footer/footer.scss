@@ -48,7 +48,7 @@
         @media screen and (max-width: 450px) {
             width: 100%;
         }
-        @media screen and (mex-width: 768px) {
+        @media screen and (max-width: 768px) {
             width: 100%;
         }
     }
@@ -104,7 +104,7 @@
         cursor: pointer;
     }
 
-    @media screen and (mex-width: 768px) {
+    @media screen and (max-width: 768px) {
         width: 100%;
         margin: 1rem 0;
     }

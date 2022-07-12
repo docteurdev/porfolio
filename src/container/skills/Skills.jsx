@@ -118,11 +118,11 @@ function Skills() {
     <div className="app__sklls-container">
       <motion.div className="app__skills-list">
         {
-          skills.map((skill) =>(
+          skills.map((skill, index) =>(
             <motion.div 
              whileInView={{ opacity: [0,1]}}
              transition={{duration: 0.5}}
-             key={skill.name}
+             key={index}
              className="app__skills-item app__flex"
              >
               <div className="app__flex" style={{backgroundColor: skill.color}} >
@@ -135,7 +135,7 @@ function Skills() {
       </motion.div>
       <motion.div className="app__skills-exp">
         {
-          experiences.map((exp) =>(
+          experiences.map((exp, index) =>(
             <>
              <motion.div
               whileInView={{opacity: [0, 1]}}
@@ -143,7 +143,7 @@ function Skills() {
               className="app__skills-exp-works"
               data-tip
               data-for={exp.name}
-              key={exp.name}
+              key={index}
              > 
               <h4 className="bold-text">{exp.date}</h4>
               <div>

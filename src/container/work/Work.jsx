@@ -66,7 +66,7 @@ function Work() {
 
       setTimeout(() =>{
       setanimaCard({y: 0, opacity: 1})
-        if(item === "All"){
+        if(item === "Apps"){
           setworksFiltered(works)
         }else{
           setworksFiltered( works.filter((work) => work.tag.toLowerCase().includes(item.toLowerCase())) )
@@ -84,7 +84,7 @@ function Work() {
 
       <div className="app__work-filter">
         {
-        ['Web App', 'Mobile App','All'].map((item, index) =>(
+        ['Web App', 'Mobile app','Apps'].map((item, index) =>(
           <div
            className={`app__work-filter-item app__flex p-text ${activeFilter === item? 'item-active' : '' }`}
            key={index}

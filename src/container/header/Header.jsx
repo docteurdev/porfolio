@@ -26,7 +26,7 @@ function Header() {
           <div className="badge-cmp app__flex">
             <span>👋🏽</span>
             <div style={{ marginLeft: 20 }}>
-              <p className="p-text">Hello  je suis <a href="exp://192.168.1.133:19000/app?payeToken=pay_01010">OPen App</a></p>
+              <p className="p-text">Hello  je suis</p>
               <h1 className="header-text">Adje</h1>
             </div>
           </div>

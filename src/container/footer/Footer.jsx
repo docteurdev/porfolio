@@ -3,6 +3,8 @@ import './footer.scss';
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { images } from "../../constants";
 import emailjs from "emailjs-com";
+import * as Yup from "yup";
+import { Formik } from 'formik';
 
 const Footer = () => {
 
@@ -12,6 +14,11 @@ const Footer = () => {
   const [isSubmitted, setisSubmitted] = useState(false);
   const [loading, setloading] = useState(false);
 
+  const schema = Yup.object({
+    name: Yup.string().min(2, "Trop court").required("Veillez entrer votre Nom"),
+    email: Yup.string().email().required("Veillez entrer votre email"),
+    description: Yup.string().max(100).required("Entrez une description svp"),
+  })
 
   const handleSubmit = (e) => {
     setloading(true)
@@ -19,7 +26,7 @@ const Footer = () => {
 
     emailjs.sendForm('service_72wpw97', 'template_0vqrpfe', e.target, 'user_sxdz4Uvhbn5o5CHhtcOGW')
       .then((result) => {
-        if(result.status){
+        if (result.status) {
 
           setisSubmitted(true)
         }
@@ -46,19 +53,22 @@ const Footer = () => {
         </div>
 
       </div>
-      {!isSubmitted && <form onSubmit={handleSubmit} className="app__footer-form app--flex">
+
+      {!isSubmitted &&
+       <form onSubmit={handleSubmit} className="app__footer-form app--flex">
         <div className="app__flex">
-          <input type="text" placeholder=' Nom' name='nom' className="p-text" required  />
+          <input type="text" placeholder=' Nom' name='nom' className="p-text" required />
         </div>
         <div className="app__flex">
           <input type="text" placeholder='Email' name='email' className="p-text" required />
         </div>
         <div>
-          <textarea placeholder='Message' name='message'required />
+          <textarea placeholder='Message' name='message' required />
         </div>
         <button type='submit' className="p-text"  >{loading ? "En cours d'envoi" : "Envoyer"}</button>
       </form>}
-        {isSubmitted && <p className="p-text" style={{fontSize: 18, textAlign: "center" }} >Merci message envoyé avec success</p>}
+      {isSubmitted && <p className="p-text" style={{ fontSize: 18, textAlign: "center" }} >Merci message envoyé avec success</p>}
+       
     </>
   )
 }

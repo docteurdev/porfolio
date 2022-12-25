@@ -35,7 +35,7 @@ function About() {
   return (
     <>
 
-     <h2 className="head-text">Développeur <span>Junior Web & Mobile</span><br /><span> </span>
+     <h2 className="head-text">Développeur <span>Web & Mobile</span><br /><span> </span>
       </h2>
 
       <div className="app__profiles">

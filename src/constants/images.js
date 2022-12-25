@@ -37,8 +37,11 @@ import spotify from '../assets/spotify.png';
 import bootstrap from '../assets/Bootstrap_logo.svg.png';
 import formik from '../assets/formik-og.png';
 import reactNative from '../assets/logo-react-native.png';
+import tailwind from '../assets/tailwind.png';
+
 
 export default {
+  tailwind,
   reactNative,
   formik,
   bootstrap,

@@ -22,7 +22,7 @@
     height: 100%;
     flex-direction: row;
 
-    padding: 4rem 2rem 0;
+    padding: 4rem 0rem 0;
     
  .header-text{
     font-size: 3rem;
@@ -35,7 +35,7 @@
     flex-direction: column;
 }
 @media screen and (max-width: 450px) {
-    padding-top: 6rem 1rem 2rem;
+    padding-top: 0 !important;
 }
 
  }

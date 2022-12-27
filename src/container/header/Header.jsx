@@ -39,10 +39,10 @@ function Header() {
             <h1 className="header-text names title-anim">Adje oumar </h1>
           </div>
           <div className="title-anim-bx">
-            <h1 className="header-text title-anim2 ">développeur front</h1>
+            <h1 className="header-text title-anim2">développeur front</h1>
           </div>
           <div className="title-anim-bx">
-            <p className="p-text title-anim3 text-red-500">
+            <p className="p-text title-anim3">
               Passionné par la conception et le développement de projets
               digitaux, je me suis tout naturellement tourné vers une carrière
               de développeur web après une formation en Comptabilité et Gestion

@@ -30,7 +30,7 @@ function Navbar() {
             <div
             >
               <ul>
-              {['acceuil', 'a propos', 'projets', 'competences', 'contact'].map((item) => (
+              {['accueil', 'a propos', 'projets', 'competences', 'contact'].map((item) => (
                 <li key={item}>
                   <div />
                   <a href={`#${item}`} onClick={() => setToggle(false)}> {item}</a>

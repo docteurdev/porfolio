@@ -84,4 +84,4 @@ function Header() {
   );
 }
 
-export default AppWrap(Header, "acceuil");
+export default AppWrap(Header, "a propos");

@@ -65,6 +65,6 @@ function About() {
 
 export default AppWrap(
   MotionWrap(About, 'app__about'),
-   "a propos",
+   " ",
    "app__whitebg"
    )

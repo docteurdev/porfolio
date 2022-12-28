@@ -30,6 +30,7 @@ import logo from '../assets/logo-oumar.png';
 import coisa from '../assets/coisa-logo.png';
 import oronia from '../assets/oronia.jpg';
 import cst from '../assets/cst-logo.png';
+import meewa from '../assets/meewa.jpeg';
 import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
@@ -74,6 +75,7 @@ export default {
   coisa,
   oronia,
   cst,
+  meewa,
   bolt,
   nb,
   skype,

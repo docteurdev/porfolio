@@ -18,6 +18,14 @@ const skills= [
   },
   { 
     date: "2022",
+    name: "React native",
+    logo: images.reactNative,
+    color: "#edf2f8",
+    description: "lor dis dèh",
+    function: "Developper frontend"
+  },
+  { 
+    date: "2022",
     name:"Vue js",
     logo: images.vue,
     color: "#edf2f8",
@@ -35,7 +43,7 @@ const skills= [
   {  
     date: "2022",
     name: "Html",
-    logo: images.html,
+    logo: images.tailwind,
     color: "#edf2f8",
     description: "lor dis dèh",
     function: "Developper frontend"
@@ -43,8 +51,8 @@ const skills= [
 
   { 
     date: "2022",
-    name: "javascript",
-    logo: images.javascript,
+    name: "Typescript",
+    logo: images.typescript,
     color: "#edf2f8",
     description: "lor dis dèh",
     function: "Developper frontend"
@@ -65,14 +73,7 @@ const skills= [
     description: "lor dis dèh",
     function: "Developper frontend"
   },
-  { 
-    date: "2022",
-    name: "Formik",
-    logo: images.formik,
-    color: "#edf2f8",
-    description: "lor dis dèh",
-    function: "Developper frontend"
-  }
+  
 ]
 
 const experiences = [

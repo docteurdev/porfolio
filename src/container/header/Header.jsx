@@ -24,7 +24,7 @@ function Header() {
       >
         <div className="app__header-bagde">
           <div className="badge-cmp app__flex">
-            <span>👋🏽</span>
+            <span className="hand" >👋🏽</span>
             <div style={{ marginLeft: 20 }}>
               <p className="p-text">Hello je suis</p>
               {/* <h1 className="header-text">Adje</h1> */}
@@ -43,12 +43,10 @@ function Header() {
           </div>
           <div className="title-anim-bx">
             <p className="p-text title-anim3">
-              Passionné par la conception et le développement de projets
+             Je suis de ceux qui pensent que si la connaissance est un pouvoir alors l'apprentissage est le super pouvoir. Passionné par la conception et le développement de projets
               digitaux, je me suis tout naturellement tourné vers une carrière
-              de développeur web après une formation en Comptabilité et Gestion
-              d’entreprise. Aussi je serai ravi de rejoindre votre équipe,
-              dynamique et jeune, en tant que Développeur d’applications Web et
-              Mobile.{" "}
+              de développeur web et mobile après une formation en Comptabilité et Gestion
+              d’Entreprise. J'adore collaborer avec d'autres développeurs et aime de nouveaux challenges .{" "}
             </p>
           </div>
         </div>

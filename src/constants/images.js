@@ -39,6 +39,7 @@ import bootstrap from '../assets/Bootstrap_logo.svg.png';
 import formik from '../assets/formik-og.png';
 import reactNative from '../assets/logo-react-native.png';
 import tailwind from '../assets/tailwind.png';
+import roqyaci from '../assets/roqyaci.png';
 
 
 export default {
@@ -76,6 +77,7 @@ export default {
   oronia,
   cst,
   meewa,
+  roqyaci,
   bolt,
   nb,
   skype,

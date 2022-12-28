@@ -12,7 +12,7 @@ const SideProjects = [
     projects: [
       { 
         compagnie:'roqya',
-        image: images.coisa,
+        image: images.roqyaci,
         name: "Application web",
         description: "Application web de la fondation",
         website: "https://coisa.io/site/",
@@ -21,7 +21,7 @@ const SideProjects = [
       },
       {
         compagnie:'roqya',
-        image: images.oronia,
+        image: images.roqyaci,
         name: "Application web",
         description:"Permet de gérer ses patients",
         website: "https://coisa.io/site/",
@@ -30,7 +30,7 @@ const SideProjects = [
       },
       {
         compagnie:'roqya',
-        image: images.oronia,
+        image: images.roqyaci,
         name: "Application mobile",
         description:"Permettant aux patients de suivre leurs rendez-vous",
         website: "https://coisa.io/site/",
@@ -138,7 +138,7 @@ function SideProject() {
             initial={{opacity:0, x: -100}}
             whileInView={animaCard}
             transition={{ duration: 0.7, delayChildren: 0.5 }} 
-            className="w-full md:w-auto shadow-lg p-2"
+            className="w-full rounded-md md:w-auto shadow-md p-2"
              key={index}>
               <div className="">
                 <img src={SideProject.image} alt={SideProject.name} className="w-[60px] h-[60px] object-contain" />
@@ -190,7 +190,7 @@ function SideProject() {
                 <div className="flex flex-col md:flex-row gap-1 mt-2 pb-3">
                 <div className="font-semibold text-sm mb-1"> Technos { SideProject.technos.length>1 ?' utilisées':'utilisée'} </div>
                 <div className="flex flex-wrap gap-1">
-                 {SideProject.technos?.map((techno, index) => <span style={{marginLeft: index === 0? 0: null}}  key={index} className='w-[100px] md:w-auto text-[13px] font-normal bg-[#313bac] text-white px-3 py-1 rounded-md' > {techno} </span> )}
+                 {SideProject.technos?.map((techno, index) => <span style={{marginLeft: index === 0? 0: null}}  key={index} className='w-[100px] h-[30px] md:w-auto text-[13px] font-normal bg-[#313bac] text-white px-3 py-1 rounded-md' > {techno} </span> )}
 
                 </div>
                 </div>

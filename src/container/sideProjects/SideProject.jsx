@@ -134,11 +134,11 @@ function SideProject() {
                     color: item.title.toLocaleLowerCase() === SideProjectsFiltered[0].compagnie.toLocaleLowerCase()? '#fff': null, 
                 }}
                key={index} onClick={() => {
-                setanimaCard({opacity:[0, 0], x:-100})
+                setanimaCard({opacity:[0,1, 0], x:-100})
                 setTimeout(() =>{
                 setanimaCard({opacity: 1, x:0})
 
-                }, 800)
+                }, 700)
                 setSideProjectsFiltered(item.projects)
             }}
                 className="font-sembold text-sm text- cursor-pointer  my-4 px-4 py-1 border-2 transition-all hover:border-slate-400 rounded-md"
@@ -157,7 +157,8 @@ function SideProject() {
             initial={{opacity:0, x: -100}}
             whileInView={animaCard}
             transition={{ duration: 0.7, delayChildren: 0.5 }} 
-            className="" key={index}>
+            className=""
+             key={index}>
               <div className="">
                 <img src={SideProject.image} alt={SideProject.name} className="w-[60px] h-[60px] object-contain" />
 
@@ -205,7 +206,7 @@ function SideProject() {
                   {SideProject.description}{" "}
                 </p>
 
-                <div className="mt-2">
+                <div className="mt-2 pb-3">
                 <div className="font-semibold text-sm mb-1"> Technos { SideProject.technos.length>1 ?' utilisées':'utilisée'} </div>
                  
                  {SideProject.technos?.map((techno, index) => <span style={{marginLeft: index === 0? 0: null}}  key={index} className='text-[13px] font-normal bg-[#313bac] text-white px-3 py-1 rounded-md mx-4' > {techno} </span> )}

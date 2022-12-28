@@ -1,4 +1,4 @@
-import{About, Work, Tastimonial, Footer, Skill, Header} from './container';
+import{About, Work, Tastimonial, Footer, Skill, Header, SideProject} from './container';
 import{Navbar} from "./components";
 import './App.scss'
 function App() {
@@ -8,8 +8,8 @@ function App() {
       <Header/>
       <About/>
       <Work/>
+      <SideProject/>
       <Skill/>
-      {/* <Tastimonial/> */}
       <Footer/>
     </div>
   );

@@ -80,17 +80,17 @@ const experiences = [
   { 
     date: "2022",
     name: "Coisa solutions",
-    description: "développement du site internet de coisa solutions",
+    // description: "développement du site internet de coisa solutions",
   },
   { 
     date: "2021",
     name: "Cst",
-    description: "Création du site internet de cst.ci",
+    // description: "Création du site internet de cst.ci",
   },
   { 
     date: "2020",
     name: "Batison",
-    description: "développement d'interfaces ",
+    // description: "développement d'interfaces ",
   }
 ]
 
@@ -132,7 +132,7 @@ function Skills() {
               <h4 className="bold-text">{exp.date}</h4>
               <div>
                 <h4 className="bold-text">{exp.name}</h4>
-                <p className="p-text"> {exp.description} </p>
+                {/* <p className="p-text"> {exp.description} </p> */}
               </div>
              </motion.div>
              {/* <ReactTooltip

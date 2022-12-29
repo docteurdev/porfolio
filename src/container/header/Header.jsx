@@ -46,7 +46,7 @@ function Header() {
              Je suis de ceux qui pensent que si la connaissance est un pouvoir alors l'apprentissage est le super pouvoir. Passionné par la conception et le développement de projets
               digitaux, je me suis tout naturellement tourné vers une carrière
               de développeur web et mobile après une formation en Comptabilité et Gestion
-              d’Entreprise. J'adore collaborer avec d'autres développeurs et aime de nouveaux challenges .{" "}
+              d’Entreprise. J'adore collaborer avec d'autres développeurs et aime de nouveaux challenges et surtout apprendre de nouvelles choses .{" "}
             </p>
           </div>
         </div>

@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 // import './SideProject.scss';
-import { AiFillEye, AiFillGithub } from "react-icons/ai";
+import { AiFillEye, AiFillGithub, } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { images } from "../../constants";
+import { IconContext } from "react-icons";
 
 const SideProjects = [
   {
@@ -16,16 +17,16 @@ const SideProjects = [
         name: "Application web",
         description: "Application web de la fondation",
         website: "https://coisa.io/site/",
-        git: "",
+        git: "https://github.com/docteurdev/landing-immobilier.git",
         technos:["React js","Tailwind css", "Motion","Typescript"]
       },
       {
         compagnie:'roqya',
         image: images.roqyaci,
-        name: "Application web",
+        name: "Application web dashboard",
         description:"Permet de gérer ses patients",
         website: "https://coisa.io/site/",
-        git: "",
+        git: "https://github.com/docteurdev/roqya/tree/main/frontend",
         technos:["React js", "Readux", "Tailwind css", "Express js",]
       },
       {
@@ -34,7 +35,7 @@ const SideProjects = [
         name: "Application mobile",
         description:"Permettant aux patients de suivre leurs rendez-vous",
         website: "https://coisa.io/site/",
-        git: "",
+        git: "https://github.com/docteurdev/roqya/tree/main/roqya-client-app",
         technos:["React native","Typescript", "Readux", "Styled component",]
       },
       
@@ -48,11 +49,11 @@ const SideProjects = [
       { 
         
         compagnie:'Projets',
-        image: images.cst,
+        image: images.dbc,
         name: "Couture",
         description: "Application mobile, permettant aux couturier de prendre les mesures, fixer les rendez-vous de leurs clients ",
         website: "http://www.cst.ci/",
-        git: "",
+        git: "https://gitlab.com/docteurdev/coutureapp",
         technos:["React native","Redux",]
 
       },
@@ -62,7 +63,7 @@ const SideProjects = [
         name: "Digital business Card",
         description: "permet de générer les cartes de visites",
         website: "http://www.cst.ci/",
-        git: "",
+        git: "https://gitlab.com/docteurdev/digitalcard",
         technos:["React native","Redux",]
 
       },
@@ -154,10 +155,24 @@ function SideProject() {
                 <div className="flex flex-col md:flex-row gap-1 mt-2 pb-3">
                 <div className="font-semibold text-sm mb-1"> Technos { SideProject.technos.length>1 ?' utilisées':'utilisée'} </div>
                 <div className="flex flex-wrap gap-1">
-                 {SideProject.technos?.map((techno, index) => <span style={{marginLeft: index === 0? 0: null}}  key={index} className='w-[100px] h-[30px] md:w-auto text-[13px] font-normal bg-[#313bac] text-white px-3 py-1 rounded-md' > {techno} </span> )}
+                 {SideProject.technos?.map((techno, index) =>
+                  <span style={{marginLeft: index === 0? 0: null}}  key={index} className='w-[100px] h-[30px] md:w-auto text-[13px] font-normal bg-[#313bac] text-white px-3 py-1 rounded-md' > {techno} </span> )
+                  
+                 }
+                </div>
+                </div>
 
-                </div>
-                </div>
+                {/* {SideProject.map((project, index) => */}
+                  
+                  <p  className="flex gap-2  p-text mt-0">
+                    <IconContext.Provider value={{className:"text-lg"}} >
+                      <AiFillGithub/>
+                    </IconContext.Provider>
+                    <a className="text-[12px] transition-colors text-[#8892b0] hover:text-[#313bac]" href={SideProject.git}> voir le repository {SideProject.name} </a>
+                  </p>
+                  {/* )
+                 } */}
+
               </div>
             </motion.div>
           )): null}

@@ -42,7 +42,7 @@ const skills= [
   },
   {  
     date: "2022",
-    name: "Html",
+    name: "Tailwind",
     logo: images.tailwind,
     color: "#edf2f8",
     description: "lor dis dèh",
@@ -77,11 +77,6 @@ const skills= [
 ]
 
 const experiences = [
-  { 
-    date: "2022",
-    name: "Digital Business Card",
-    description: "développement  frontend",
-  },
   { 
     date: "2022",
     name: "Couture",

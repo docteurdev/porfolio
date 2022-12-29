@@ -12,7 +12,7 @@ const works = [
     image: images.coisa,
     name: "Coisa solution web site",
     description:"Site vitrine presentant l'entreprise",
-    website: "https://coisa.io/site/",
+    website:"", // "https://coisa.io/site/",
     git: ""
   },
   { 
@@ -21,7 +21,7 @@ const works = [
     image: images.oronia,
     name: "Oronia",
     description:"application web mettant en relation freelancers IT et entreprises IT",
-    website: "https://oronia.coisa.io/",
+    website: "",//"https://oronia.coisa.io/",
     git: ""
   },
   { 
@@ -30,7 +30,7 @@ const works = [
     image: images.meewa,
     name: "Meewa",
     description:"application web et mobile adresseés aux établissements et parents",
-    website: "https://oronia.coisa.io/",
+    website:"", //"https://oronia.coisa.io/",
     git: ""
   },
   { 
@@ -39,7 +39,7 @@ const works = [
     image: images.meewa,
     name: "Meewa",
     description:"Site web",
-    website: "https://oronia.coisa.io/",
+    website:"", // "https://oronia.coisa.io/",
     git: ""
   },
   { 
@@ -48,7 +48,7 @@ const works = [
     image: images.cst,
     name: "Cst",
     description:"Cst web site ",
-    website: "http://www.cst.ci/",
+    website:"",// "http://www.cst.ci/",
     git: ""
   },
   // { title: "Digital Business Card",

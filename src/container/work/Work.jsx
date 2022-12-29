@@ -60,7 +60,7 @@ const works = [
 ]
 
 function Work() {
-  const [activeFilter, setactiveFilter] = useState("All");
+  const [activeFilter, setactiveFilter] = useState("Tout");
   const [animaCard, setanimaCard] = useState({y: 0, opacity: 1});
   const [worksFiltered, setworksFiltered] = useState(works)
 
@@ -147,7 +147,7 @@ function Work() {
 
               <div className="app__work-content app__flex">
                 <h4 className="bold-text"> {work.title} </h4>
-                <p className="p-text" style={{marginTop: 10}} > {work.description} </p>
+                <p className="p-text text-justify" style={{marginTop: 10}} > {work.description} </p>
 
                 <div className="app__work-tag app__flex">
                   <div className="p-text">  </div>

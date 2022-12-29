@@ -130,7 +130,7 @@ function SideProject() {
           </ul>
         </div>
         <motion.div
-          className=" flex flex-wrap gap-0 overflow-hidden pl-5 w-full md:w-5/6"
+          className=" flex flex-wrap gap-0 overflow-hidden p-5 w-full md:w-5/6"
           animate={animaCard}
         >
           {SideProjectsFiltered? SideProjectsFiltered.map((SideProject, index) => (
@@ -142,42 +142,6 @@ function SideProject() {
              key={index}>
               <div className="">
                 <img src={SideProject.image} alt={SideProject.name} className="w-[60px] h-[60px] object-contain" />
-
-                {/* <motion.div
-                  whileHover={{ opacity: [0, 1] }}
-                  transition={{
-                    duration: 0.25,
-                    ease: "easeInOut",
-                    staggerChildren: 0.5,
-                  }}
-                  className=""
-                >
-                  {SideProject.website && (
-                    <a href={SideProject.website} rel="noreferre">
-                      <motion.div
-                        whileInView={{ scale: [0, 1] }}
-                        whileHover={{ scale: [1, 0, 1] }}
-                        transition={{ duration: 0.25 }}
-                         className="app__flex"
-                      >
-                        <AiFillEye /> 
-                      </motion.div>
-                    </a>
-                  )}
-
-                  {SideProject.git && (
-                    <a href={SideProject.git} rel="noreferre">
-                      <motion.div
-                        whileInView={{ scale: [0, 1] }}
-                        whileHover={{ scale: [1, 0, 1] }}
-                        transition={{ duration: 0.25 }}
-                        className="app__flex"
-                      >
-                        <AiFillGithub />
-                      </motion.div>
-                    </a>
-                  )}
-                </motion.div> */}
               </div>
 
               <div className="">

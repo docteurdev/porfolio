@@ -165,10 +165,11 @@ span {
   div {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: 81% 19% 23% 77% / 71% 41% 59% 29% ;
 
     background: var(--white-color);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .25);
+    
 
     img {
       width: 60%;

@@ -79,26 +79,14 @@ const skills= [
 const experiences = [
   { 
     date: "2022",
-    name: "Couture",
-    description: "développement  frontend",
-  },
-  { 
-    date: "2021",
     name: "Coisa solutions",
     description: "développement du site internet de coisa solutions",
-  },
-  { 
-    date: "2021",
-    name: "Oronia",
-    description: "développement  frontend ",
   },
   { 
     date: "2021",
     name: "Cst",
     description: "Création du site internet de cst.ci",
   },
- 
- 
   { 
     date: "2020",
     name: "Batison",

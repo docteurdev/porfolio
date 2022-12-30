@@ -60,7 +60,7 @@ const Footer = () => {
       {!isSubmitted &&
        <form onSubmit={handleSubmit} className="app__footer-form app--flex">
         <div className="app__flex">
-          <input type="text" placeholder=' Nom' name='nom' className="p-text" required />
+          <input type="text" placeholder=' Name' name='nom' className="p-text" required />
         </div>
         <div className="app__flex">
           <input type="text" placeholder='Email' name='email' className="p-text" required />

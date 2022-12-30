@@ -68,7 +68,7 @@ const Footer = () => {
         <div>
           <textarea placeholder='Message' name='message' required />
         </div>
-        <button type='submit' className="p-text"  >{loading ? "En cours d'envoi" : "Envoyer"}</button>
+        <button type='submit' className="p-text"  >{loading ? "Sending..." : "Send"}</button>
       </form>}
       {isSubmitted && <p className="p-text" style={{ fontSize: 18, textAlign: "center" }} >Merci message envoyé avec success</p>}
        

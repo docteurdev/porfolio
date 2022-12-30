@@ -8,12 +8,12 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 const abouts = [
   {
     title: "Mobile Developpement",
-    description: "Avec React Native",
+    description: "with React Native",
     image:images.about02
   },
   {
     title: "Web Developpement",
-    description: "Avec React js et Vue js",
+    description: "with React js and Vue js",
     image: images.about04
   }
 ]
@@ -35,7 +35,7 @@ function About() {
   return (
     <>
 
-     <h2 className="head-text">Développeur <span>Web & Mobile</span><br /><span> </span>
+     <h2 className="head-text"> <span>Web & Mobile</span> Developer<br /><span> </span>
       </h2>
 
       <div className="app__profiles">

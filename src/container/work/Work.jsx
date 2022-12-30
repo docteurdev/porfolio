@@ -11,7 +11,7 @@ const works = [
     title:"Coisa",
     image: images.coisa,
     name: "Coisa solution web site",
-    description:"Site vitrine presentant l'entreprise",
+    description:"Web site of the company",
     website:"", // "https://coisa.io/site/",
     git: ""
   },
@@ -20,7 +20,7 @@ const works = [
     title:"Oronia",
     image: images.oronia,
     name: "Oronia",
-    description:"application web mettant en relation freelancers IT et entreprises IT",
+    description:"It makes relation between  IT freelancers and IT companies",
     website: "",//"https://oronia.coisa.io/",
     git: ""
   },
@@ -29,25 +29,25 @@ const works = [
     title:"Meewa",
     image: images.meewa,
     name: "Meewa",
-    description:"application web et mobile adresseés aux établissements et parents",
+    description:" web and mobile application school and parents ",
     website:"", //"https://oronia.coisa.io/",
     git: ""
   },
   { 
-    tag: "Site web",
+    tag: "web Site ",
     title:"Meewa",
     image: images.meewa,
     name: "Meewa",
-    description:"Site web",
+    description:"Web site of the company",
     website:"", // "https://oronia.coisa.io/",
     git: ""
   },
   { 
-    tag: "Site web",
+    tag: "web Site ",
     title:"Cst",
     image: images.cst,
     name: "Cst",
-    description:"Cst web site ",
+    description:"Web site of the company",
     website:"",// "http://www.cst.ci/",
     git: ""
   },
@@ -60,7 +60,7 @@ const works = [
 ]
 
 function Work() {
-  const [activeFilter, setactiveFilter] = useState("Tout");
+  const [activeFilter, setactiveFilter] = useState("All");
   const [animaCard, setanimaCard] = useState({y: 0, opacity: 1});
   const [worksFiltered, setworksFiltered] = useState(works)
 
@@ -71,7 +71,7 @@ function Work() {
 
       setTimeout(() =>{
       setanimaCard({y: 0, opacity: 1})
-        if(item === "Tout"){
+        if(item === "All"){
           setworksFiltered(works)
         }else{
           setworksFiltered( works.filter((work) => work.tag.toLowerCase().includes(item.toLowerCase())) )
@@ -85,11 +85,11 @@ function Work() {
 
   return (
     <>
-      <h2 className="head-text">Section de <span>Projets Entreprises</span></h2>
+      <h2 className="head-text"> <span>Companies </span>Projects</h2>
 
       <div className="app__work-filter">
         {
-        ['Web App', 'Site web','Tout'].map((item, index) =>(
+        ['Web App', 'Web Site','All'].map((item, index) =>(
           <div
            className={`app__work-filter-item app__flex p-text ${activeFilter === item? 'item-active' : '' }`}
            key={index}
@@ -163,5 +163,5 @@ function Work() {
 
 export default AppWrap(
   MotionWrap(Work, 'app__works'),
-  "projets"
+  "projects"
 )

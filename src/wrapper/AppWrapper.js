@@ -12,7 +12,7 @@ const AppWrapper = (Component, idName, classNames) => function HOC(){
 
                 <div className='copyright' >
                     <p className='p-text' >@2022 OUMAR</p>
-                    <p className='p-text' >Tous droits réservés</p>
+                    <p className='p-text' >All rights reserved</p>
                 </div>
 
             </div>

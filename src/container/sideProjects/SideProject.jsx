@@ -15,7 +15,7 @@ const SideProjects = [
         compagnie:'roqya',
         image: images.roqyaci,
         name: "Application web",
-        description: "Application web de la fondation",
+        description: "Foundation web application",
         website: "https://coisa.io/site/",
         git: "https://github.com/docteurdev/landing-immobilier.git",
         technos:["React js","Tailwind css", "Motion","Typescript"]
@@ -23,8 +23,8 @@ const SideProjects = [
       {
         compagnie:'roqya',
         image: images.roqyaci,
-        name: "Application web dashboard",
-        description:"Permet de gérer ses patients",
+        name: "",
+        description:"Allowing to the health organization to manage thier patients",
         website: "https://coisa.io/site/",
         git: "https://github.com/docteurdev/roqya/tree/main/frontend",
         technos:["React js", "Readux", "Tailwind css", "Express js",]
@@ -33,7 +33,7 @@ const SideProjects = [
         compagnie:'roqya',
         image: images.roqyaci,
         name: "Application mobile",
-        description:"Permettant aux patients de suivre leurs rendez-vous",
+        description:"Allowing patients to track their appointments",
         website: "https://coisa.io/site/",
         git: "https://github.com/docteurdev/roqya/tree/main/roqya-client-app",
         technos:["React native","Typescript", "Readux", "Styled component",]
@@ -44,24 +44,24 @@ const SideProjects = [
   
   {
     tag: "web app",
-    title: "Projets",
+    title: "Projects",
     projects: [
       { 
         
-        compagnie:'Projets',
+        compagnie:'Projects',
         image: images.dbc,
         name: "Couture",
-        description: "Application mobile, permettant aux couturier de prendre les mesures, fixer les rendez-vous de leurs clients ",
+        description: " Mobile application, allowing designers to take measurements, set appointments for their customers",
         website: "http://www.cst.ci/",
         git: "https://gitlab.com/docteurdev/coutureapp",
         technos:["React native","Redux",]
 
       },
       {
-        compagnie:'Projets',
+        compagnie:'Projects',
         image: images.dbc,
         name: "Digital business Card",
-        description: "permet de générer les cartes de visites",
+        description: "It generate visit card",
         website: "http://www.cst.ci/",
         git: "https://gitlab.com/docteurdev/digitalcard",
         technos:["React native","Redux",]
@@ -102,7 +102,7 @@ function SideProject() {
 
     <div className="bg-slate-100 md:w-11/12 mx-auto h-full md:h-[100vh] px-6 p-[5rem]">
       <h2 className="head-text mb-[4rem]">
-        Section de <span>Projets personnels </span>
+         <span>Side</span> Projects
       </h2>
       <div className="w-full flex gap-4 flex-col md:flex-row">
         <div className="w-full md:w-1/6">
@@ -152,12 +152,11 @@ function SideProject() {
                   {SideProject.description}{" "}
                 </p>
 
-                <div className="flex flex-col md:flex-row gap-1 mt-2 pb-3">
-                <div className="font-semibold text-sm mb-1"> Technos { SideProject.technos.length>1 ?' utilisées':'utilisée'} </div>
+                <div className="flex items-center flex-col md:flex-row gap-1 mt-2 pb-3">
+                <div className="font-semibold text-sm mb-1">{ SideProject.technos.length>1 ?'Technos':'Techno'} used</div>
                 <div className="flex flex-wrap gap-1">
                  {SideProject.technos?.map((techno, index) =>
                   <span style={{marginLeft: index === 0? 0: null}}  key={index} className='w-[100px] h-[30px] md:w-auto text-[13px] font-normal bg-[#313bac] text-white px-3 py-1 rounded-md' > {techno} </span> )
-                  
                  }
                 </div>
                 </div>
@@ -168,7 +167,7 @@ function SideProject() {
                     <IconContext.Provider value={{className:"text-lg"}} >
                       <AiFillGithub/>
                     </IconContext.Provider>
-                    <a className="text-[12px] transition-colors text-[#8892b0] hover:text-[#313bac]" href={SideProject.git}> voir le repository {SideProject.name} </a>
+                    <a className="text-[12px] transition-colors text-[#8892b0] hover:text-[#313bac]" href={SideProject.git}>Open the repos {SideProject.name} </a>
                   </p>
                   {/* )
                  } */}

@@ -89,7 +89,7 @@ const experiences = [
   },
   { 
     date: "2020",
-    name: "Batison",
+    name: "Kiyala corporation",
     // description: "développement d'interfaces ",
   }
 ]
@@ -97,7 +97,7 @@ const experiences = [
 function Skills() {
   return (
     <>
-    <h2 className="head-text">Compétences & Expériences</h2>
+    <h2 className="head-text">Skills & Experiences</h2>
 
     <div className="app__sklls-container">
       <motion.div className="app__skills-list">
@@ -154,6 +154,6 @@ function Skills() {
 
 export default AppWrap(
   MotionWrap(Skills, "app__skills"),
-   "competences",
+   "skills",
    "app__whitebg"
    )

@@ -26,7 +26,7 @@ function Header() {
           <div className="badge-cmp app__flex">
             <span className="hand" >👋🏽</span>
             <div style={{ marginLeft: 20 }}>
-              <p className="p-text">Hello je suis</p>
+              <p className="p-text">Hello</p>
               {/* <h1 className="header-text">Adje</h1> */}
             </div>
           </div>
@@ -36,18 +36,17 @@ function Header() {
 
           </div> */}
           <div className="title-anim-bx">
-            <h1 className="header-text names title-anim">Adje oumar </h1>
+            <h1 className="header-text names title-anim">I'm Adje oumar </h1>
           </div>
           <div className="title-anim-bx">
-            <h1 className="header-text title-anim2">développeur front</h1>
+            <h1 className="header-text title-anim2">Front end developer</h1>
           </div>
           <div className="title-anim-bx">
             <p className="p-text title-anim3">
-             Je suis de ceux qui pensent que si la connaissance est un pouvoir alors l'apprentissage est le super pouvoir. Passionné par la conception et le développement de projets
-              digitaux, je me suis tout naturellement tourné vers une carrière
-              de développeur web et mobile après une formation en Comptabilité et Gestion
-              d’Entreprise. J'adore collaborer avec d'autres développeurs et aime de nouveaux challenges et surtout apprendre de nouvelles choses .{" "}
-            </p>
+            I am one of those who think that if knowledge is a power then learning is the super power. Passionate about project design and development
+              digital, I naturally turned to a career
+              as a web and mobile developer after training in Accounting and Management
+              of Company. I love collaborating with other developers and love new challenges and especially learning new things.            </p>
           </div>
         </div>
       </motion.div>
@@ -82,4 +81,4 @@ function Header() {
   );
 }
 
-export default AppWrap(Header, "a propos");
+export default AppWrap(Header, "about me");

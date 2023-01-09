@@ -19,7 +19,7 @@ const skills= [
   { 
     date: "2022",
     name: "React native",
-    logo: images.reactNative,
+    logo: images.react,
     color: "#edf2f8",
     description: "lor dis dèh",
     function: "Developper frontend"

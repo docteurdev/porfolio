@@ -73,6 +73,14 @@ const skills= [
     description: "lor dis dèh",
     function: "Developper frontend"
   },
+  { 
+    date: "2022",
+    name: "Node js",
+    logo: images.node,
+    color: "#edf2f8",
+    description: "lor dis dèh",
+    function: "Developper frontend"
+  },
   
 ]
 

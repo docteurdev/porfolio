@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { images } from "../../constants";
 import { IconContext } from "react-icons";
+import { FaEye } from "react-icons/fa";
 
 const SideProjects = [
   {
@@ -16,16 +17,16 @@ const SideProjects = [
         image: images.roqyaci,
         name: "Application web",
         description: "Foundation web application",
-        website: "https://coisa.io/site/",
+        website: "",
         git: "https://github.com/docteurdev/landing-immobilier.git",
         technos:["React js","Tailwind css", "Motion","Typescript"]
       },
       {
         compagnie:'roqya',
         image: images.roqyaci,
-        name: "",
+        name: "roqya dashboard",
         description:"Allowing to the health organization to manage thier patients",
-        website: "https://coisa.io/site/",
+        website: "https://roqya-front.vercel.app/",
         git: "https://github.com/docteurdev/roqya/tree/main/frontend",
         technos:["React js", "Readux", "Tailwind css", "Express js",]
       },
@@ -34,7 +35,7 @@ const SideProjects = [
         image: images.roqyaci,
         name: "Application mobile",
         description:"Allowing patients to track their appointments",
-        website: "https://coisa.io/site/",
+        website: "",
         git: "https://github.com/docteurdev/roqya/tree/main/roqya-client-app",
         technos:["React native","Typescript", "Readux", "Styled component",]
       },
@@ -52,7 +53,7 @@ const SideProjects = [
         image: images.dbc,
         name: "Couture",
         description: " Mobile application, allowing designers to take measurements, set appointments for their customers",
-        website: "http://www.cst.ci/",
+        website: "",
         git: "https://gitlab.com/docteurdev/coutureapp",
         technos:["React native","Redux",]
 
@@ -62,7 +63,7 @@ const SideProjects = [
         image: images.dbc,
         name: "Digital business Card",
         description: "It generate visit card",
-        website: "http://www.cst.ci/",
+        website: "",
         git: "https://gitlab.com/docteurdev/digitalcard",
         technos:["React native","Redux",]
 
@@ -163,12 +164,22 @@ function SideProject() {
 
                 {/* {SideProject.map((project, index) => */}
                   
-                  <p  className="flex gap-2  p-text mt-0">
-                    <IconContext.Provider value={{className:"text-lg"}} >
-                      <AiFillGithub/>
-                    </IconContext.Provider>
-                    <a className="text-[12px] transition-colors text-[#8892b0] hover:text-[#313bac]" href={SideProject.git}>Open the repos {SideProject.name} </a>
-                  </p>
+                  <div className="flex gap-4 items-center flex-wrap">
+                    <p  className="flex gap-2  p-text mt-0">
+                      <IconContext.Provider value={{className:"text-lg"}} >
+                        <AiFillGithub/>
+                      </IconContext.Provider>
+                      <a className="text-[12px] transition-colors text-[#8892b0] hover:text-[#313bac]" href={SideProject.git}>Open the repos {SideProject.name} </a>
+                    </p>
+
+                    {!SideProject.website==''?
+                     <p  className="flex gap-2  p-text mt-0">
+                      <IconContext.Provider value={{className:"text-lg"}} >
+                        <FaEye/>
+                      </IconContext.Provider>
+                      <a className="text-[12px] transition-colors text-[#8892b0] hover:text-[#313bac]" href={SideProject.website}> View {SideProject.name} </a>
+                    </p>: null}
+                  </div>
                   {/* )
                  } */}
 
@@ -183,4 +194,4 @@ function SideProject() {
 }
 
 export default SideProject
-//  AppWrap(MotionWrap(SideProject, "app__SideProjects"), "bg-white");
+ AppWrap(MotionWrap(SideProject, "app__SideProjects"), "bg-white");
